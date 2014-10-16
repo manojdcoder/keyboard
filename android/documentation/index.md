@@ -1,7 +1,3 @@
-# keyboard Module
-
-## Usage
-
 var win = Ti.UI.createWindow({
 	backgroundColor : 'white'
 });
