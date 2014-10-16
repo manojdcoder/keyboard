@@ -1,3 +1,7 @@
+## Usage
+
+```javascript
+
 var win = Ti.UI.createWindow({
 	backgroundColor : 'white'
 });
@@ -16,3 +20,5 @@ button.addEventListener("click", function() {
 	keyboard.hide();
 });
 win.add(button);
+
+```
