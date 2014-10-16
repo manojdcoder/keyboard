@@ -1,39 +1,22 @@
 # keyboard Module
 
-## Description
-
-TODO: Enter your module description here
-
-## Accessing the keyboard Module
-
-To access this module from JavaScript, you would do the following:
-
-    var keyboard = require("ti.keyboard");
-
-The keyboard variable is a reference to the Module object.
-
-## Reference
-
-TODO: If your module has an API, you should document
-the reference here.
-
-### keyboard.function
-
-TODO: This is an example of a module function.
-
-### keyboard.property
-
-TODO: This is an example of a module property.
-
 ## Usage
 
-TODO: Enter your usage example here
+var win = Ti.UI.createWindow({
+	backgroundColor : 'white'
+});
+var textfield = Ti.UI.createTextField({
+	hintText : "Text"
+});
+win.add(textfield);
+win.open();
 
-## Author
-
-TODO: Enter your author name, email and other contact
-details you want to share here.
-
-## License
-
-TODO: Enter your license/legal information here.
+var button = Ti.UI.createButton({
+	title : "Hide",
+	top : 10
+});
+button.addEventListener("click", function() {
+	var keyboard = require('ti.keyboard');
+	keyboard.hide();
+});
+win.add(button);
