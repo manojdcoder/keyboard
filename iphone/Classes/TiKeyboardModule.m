@@ -2,7 +2,7 @@
  * keyboard
  *
  * Created by Your Name
- * Copyright (c) 2014 Your Company. All rights reserved.
+ * Copyright (c) 2015 Your Company. All rights reserved.
  */
 
 #import "TiKeyboardModule.h"
@@ -17,7 +17,7 @@
 // this is generated for your module, please do not change it
 -(id)moduleGUID
 {
-	return @"499e4b45-98c7-418c-bd6c-b73c9b423111";
+	return @"6c9ebd9f-1bcc-438b-a1aa-16ad2d23a7a9";
 }
 
 // this is generated for your module, please do not change it
@@ -68,11 +68,11 @@
 
 -(id)hide:(id)args
 {
-	dispatch_sync(dispatch_get_main_queue(), ^{
-  		UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-		UIView *topView = window.rootViewController.view;
-		[topView endEditing:YES];
-	});
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+        UIView *topView = window.rootViewController.view;
+        [topView endEditing:YES];
+    });
 }
 
 @end
